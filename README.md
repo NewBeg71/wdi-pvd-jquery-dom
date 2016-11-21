@@ -66,9 +66,11 @@
   - http://www.w3schools.com/jquery/jquery_traversing.asp
   
 #### Code Together: Selecting elements and adding styles
-Find all p elements that are children of a div element and apply a border to them.
+Find all `p` elements that are children of a `div` element and apply a border that is 1px wide, solid, and gray to the matching `p` elements.
 
 ```
+<!-- Put this into your index.html page. Then open your index.html page in Chrome. Next open the Chrome console to try writing javascript that accomplishes the task. When would you place your code in the script tags below the content of the web page? -->
+
 <p>one</p>
 <div><p>two</p></div>
 <p>three</p>
@@ -99,7 +101,7 @@ Find all p elements that are children of a div element and apply a border to the
 #### Code Together: jQuery selectors for each of the above
 
 #### You Do: Selecting DOM elements (use jQuery) (10 min)
-https://github.com/ga-wdi-exercises/js-dom-quotes
+https://github.com/ga-wdi-exercises/js-dom-quotes/tree/jquery
 
 ### Discussion: What is $(document).ready()?
 ```
@@ -125,17 +127,17 @@ $( "button.continue" ).html( "Next Step..." )
 </details>
 
 
-### Discussion: Why use jQuery over directly working with a DOM object?
-- reference: [learn.jquery.com](https://learn.jquery.com/using-jquery-core/jquery-object/)
-
-### Discussion: What happens if you get a javascript library conflict?
-- reference: [learn.jquery.com](http://learn.jquery.com/using-jquery-core/avoid-conflicts-other-libraries/)
-
-### jQuery Setters, Getters & jQuery docs
-- When would you want to get or set a value on a web page?
+### jQuery Setters & Getters & jQuery docs
 - When reading the jQuery docs, be sure to scroll through the whole document to ensure you're looking at the correct method signature. Some jQuery methods change their behavior depending on the number of arguments they have when called.
 - Have a look at `.val()`. [(jQuery documentation on val())](http://api.jquery.com/val/). Note in the table of contents that there are two method signatures, .val() and.val(value). This is our hint that .val() can do two things.
 - Reading the documentation, we discover that .val() is getter on an element, but that .val(value) is a setter on an element. Be sure you're using the correct method. Reading examples is very helpful, and the jQuery examples in the docs are fully functional!
+- When would you want to get or set a value on a web page?
+
+### Read and Discuss: Why use jQuery over directly working with a DOM object?
+- reference: [learn.jquery.com](https://learn.jquery.com/using-jquery-core/jquery-object/)
+
+### Read and Discuss: What happens if you get a javascript library conflict?
+- reference: [learn.jquery.com](http://learn.jquery.com/using-jquery-core/avoid-conflicts-other-libraries/)
 
 ### Lab: Get the value of an input
 ```
@@ -161,7 +163,7 @@ $( "button.continue" ).html( "Next Step..." )
 - Question: What if you had multiple inputs?
 
 ### Lab: Research Common jQuery Functions
-Here is a list of most commonly used jQuery API functions:
+Here is a list of some commonly used jQuery API functions:
 1. find()
 2. hide()
 3. show()
