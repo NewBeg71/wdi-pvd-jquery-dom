@@ -99,11 +99,10 @@ Find all `p` elements that are children of a `div` element and apply a border th
 - Why use vanilla vs jQuery?
 
 #### Vanilla Methods for selecting elements
-- document.getElementById
-- document.getElementsByTagName
-- document.getElementsByClassName
-- document.querySelector
-- document.querySelectorAll
+- `document.getElementById`
+- `document.getElementsByTagName`
+- `document.getElementsByClassName`
+- `document.querySelector`
 - and more...
 
 #### Code Together: jQuery selectors for each of the above
@@ -158,33 +157,37 @@ $( "button.continue" ).html( "Next Step..." )
 <code>console.log($("input").val())
   
   </code>
-<p>Fancy: <code>$( "input" )
+<p>Fancy: <pre>$( "input" )
   .keyup(function() {
     var value = $( this ).val();
     $( "p" ).text( value );
   })
   .keyup();
-  </code>
+  </pre>
   </p>
   </details>
   
 - Question: What if you had multiple inputs?
 
 ### Lab: Research Common jQuery Functions
-Here is a list of some commonly used jQuery API functions:
-1. find()
-2. hide()
-3. show()
-4. html()
-5. append()
-6. prepend()
-7. on()
-8. submit()
-9. css()
-10. attr()
-11. eq()
-12. text()
-13. each()
+Here is a list of some commonly used jQuery API functions. Work together as a group, then choose one person to speak about each method to the class.
+
+- Pod 1:
+ 1. `find()`
+ 2. `hide()`
+ 3. `show()`
+- Pod 2:
+ 4. `html()`
+ 5. `append()`
+ 6. `prepend()`
+- Pod 3:
+ 7. `on()`
+ 8. `off()`
+ 9. `css()`
+- Pod 4:
+ 10. `attr()`
+ 11. `submit()`
+ 12. `text()`
  
 ### jQuery function examples and method chaining
 `eq()`
@@ -209,8 +212,9 @@ How about:
 [`submit()`](https://api.jquery.com/submit/)
 
 ### Homework
-More Practice: [Try jQuery level 1](http://try.jquery.com/levels/1/sections/1)
 Homework: https://github.com/ga-wdi-exercises/the-jquery-review
+Homework 2: https://github.com/danman01/wdi-pvd-jquery-dom/blob/master/homework.md
+More Practice: [Try jQuery level 1](http://try.jquery.com/levels/1/sections/1)
 
 ### Bonus Material
 
@@ -264,3 +268,18 @@ further study: static vs dynamic sites. Pros and cons of each. When should you u
 <details><summary>jQuery:</summary>
 <p></p>
 </details>
+
+#### Even more resources:
+[Boston lesson](https://github.com/ga-wdi-boston/jquery-dom)
+
+[DC lesson](https://github.com/ga-wdi-lessons/jquery-dom)
+
+Study:
+https://github.com/ga-wdi-boston/jquery-dom-study
+https://github.com/ga-wdi-exercises/the-jquery-review
+
+
+[Quiz](https://github.com/ga-wdi-boston/wdi_8_js_quiz_jquery)
+
+[jQuery basics](https://github.com/ga-wdi-boston/wdi_8_js_demo_basic_jquery)
+
