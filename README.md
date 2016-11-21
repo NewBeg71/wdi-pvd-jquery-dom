@@ -18,18 +18,26 @@
 - In the Chrome console (Cmd + Option + j), type `document`
 - Explore this object: `document.head`, `document.body`, what else is available via the `document` object?
 - Javascript allows us to query and manipulate elements in the DOM. We can do things like...
- - Add new elements
- - Change text of elements
+ - Add new elements:
+   - `document.createElement('elementName')`
+ - Move elements around:
+   - `document.body.appendChild('elementName')`
+ - Change text of elements:
+   - `document.getElementsByTagName('a')[0].innerHTML('some new text')`
+   - why did we need to use `[0]`?
  - Add event handlers to elements (`onclick`, [`onmousedown`](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousedown_html), `onkeypress`, etc) (more on this next lesson...)
  
 #### Code Together
-- Create a blank index.html page
-- Using Javascript, append a new element, an `h1` tag, to the top of the page
-- Change the text of the `h1` tag
+- Create a blank index.html page. Save this page to disk and load it in Chrome. Open the Chrome console to work with this page.
+- Using Javascript, create a new `h1` element. Append this new element to the top of the page, directly under the opening `<body>` tag.
+- Change the text of your `h1` tag
+- Add an attribute, id, to the `h1` tag
+  - reference: [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 
 #### You Try:
-- Using Javascript in the Chrome Console, add a `<div>` with a `<button>` inside of it below the `h1` tag.  Put any text you want inside the button
-- Write this javascript to a separate javascript file, and load the file into your index.html page. The javascript should execute at page load.
+- Using Javascript in the Chrome Console, create a `<div>` element. Within the `<div>`, **append** a `<button>` element inside of it. Append below your `h1` tag.  Put any text you want inside the button.
+- Give the button a class name of "pvd"
+- Write this javascript to a separate javascript file, and load the file into your index.html page. The javascript should execute at page load. When would you not want the javascript to execute on page load?
 
 ### What is jQuery?
 - "write less, do more" javascript library
@@ -171,17 +179,37 @@ Here is a list of some commonly used jQuery API functions:
 5. append()
 6. prepend()
 7. on()
-8. off()
+8. submit()
 9. css()
 10. attr()
 11. eq()
 12. text()
 13. each()
  
-### Code Together: .eq() and .each()
+### jQuery function examples and method chaining
+`eq()`
+- resource: [api.jquery.com](https://api.jquery.com/eq/)
+Given:
+```
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+```
+Which li is affected when the following code is executed?
+`$( "li" ).eq( 2 ).css( "background-color", "red" );`
+How about:
+`$( "li" ).eq( -2 ).css( "background-color", "red" );`
+
+[`each()`](http://api.jquery.com/jquery.each/)
+
+[`submit()`](https://api.jquery.com/submit/)
 
 ### Homework
-https://github.com/ga-wdi-exercises/ttmar
+https://github.com/ga-wdi-exercises/the-jquery-review
 
 ### Bonus Material
 
