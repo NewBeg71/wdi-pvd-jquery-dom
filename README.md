@@ -209,7 +209,8 @@ How about:
 [`submit()`](https://api.jquery.com/submit/)
 
 ### Homework
-https://github.com/ga-wdi-exercises/the-jquery-review
+More Practice: [Try jQuery level 1](http://try.jquery.com/levels/1/sections/1)
+Homework: https://github.com/ga-wdi-exercises/the-jquery-review
 
 ### Bonus Material
 
