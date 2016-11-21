@@ -24,12 +24,12 @@
  
 #### Code Together
 - Create a blank index.html page
-- Using Javascript, append a new element, an H1 tag, to the top of the index.html page
-- Change the text of the H1 tag
+- Using Javascript, append a new element, an `h1` tag, to the top of the page
+- Change the text of the `h1` tag
 
 #### You Try:
-- Using Javascript, add a `<div>` with a `<button>` inside of it, with any text you want inside the button
-- Put this javascript into a separate JS file
+- Using Javascript in the Chrome Console, add a `<div>` with a `<button>` inside of it below the `h1` tag.  Put any text you want inside the button
+- Write this javascript to a separate javascript file, and load the file into your index.html page. The javascript should execute at page load.
 
 ### What is jQuery?
 - "write less, do more" javascript library
