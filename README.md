@@ -49,29 +49,33 @@
   - What does `$( "div.foo" );` do?
   - If no elements match the provided selector, the new jQuery object is "empty"; that is, it contains no elements and has `.length` property of 0.
 
+### DOM Tree-Traversal using jQuery
+- Draw wireframe
+- Diagram DOM structure on board
+- Verbally traverse to different elements
+  - how to go up, down and sideways?
+  - parent
+  - ancestor
+  - child
+  - descendant
+  - neighbor
+  - first
+  - last
+- Resources:
+  - https://api.jquery.com/category/traversing/tree-traversal/
+  - http://www.w3schools.com/jquery/jquery_traversing.asp
+  
 #### Code Together: Selecting elements and adding styles
 Find all p elements that are children of a div element and apply a border to them.
 
 ```
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery demo</title>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
- 
 <p>one</p>
 <div><p>two</p></div>
 <p>three</p>
  
 <script>
-
+// Your code here.
 </script>
- 
-</body>
-</html>
 ```
 <details><summary>Answer:</summary>
 <p>
@@ -105,25 +109,8 @@ $( document ).ready(function() {
 });
 ```
 - Access and manipulate a page safely. Things not working? Make sure the document is loaded by checking with...
-- Hardly ever a use case where you do not use $(document).ready() to wrap your JS
-- shortcut: $(function(){}
-
-### DOM Tree-Traversal using jQuery
-- Draw wireframe
-- Diagram DOM structure on board
-- Verbally traverse to different elements
-  - how to go up, down and sideways?
-  - parent
-  - ancestor
-  - child
-  - descendant
-  - neighbor
-  - first
-  - last
-- Resources:
-  - https://api.jquery.com/category/traversing/tree-traversal/
-  - http://www.w3schools.com/jquery/jquery_traversing.asp
-
+- Hardly ever a use case where you do not use `$(document).ready()` to wrap your JS
+- shortcut: `$(function(){}`
 
 #### DOM Manipulation using jQuery
 
@@ -144,37 +131,17 @@ $( "button.continue" ).html( "Next Step..." )
 ### Discussion: What happens if you get a javascript library conflict?
 - reference: [learn.jquery.com](http://learn.jquery.com/using-jquery-core/avoid-conflicts-other-libraries/)
 
-### Demo: jQuery Setters & Getters
-- When reading the jQuery documentation, be sure to scroll through the whole document to ensure you're looking at the correct method signature. Some jQuery methods change their behavior depending on the number of arguments they have when called.
-- For example, have a look at `.val()`. Note in the table of contents that there are two method signatures, .val() and.val(value). This is our hint that .val() can do two things.
+### jQuery Setters, Getters & jQuery docs
+- When would you want to get or set a value on a web page?
+- When reading the jQuery docs, be sure to scroll through the whole document to ensure you're looking at the correct method signature. Some jQuery methods change their behavior depending on the number of arguments they have when called.
+- Have a look at `.val()`. [(jQuery documentation on val())](http://api.jquery.com/val/). Note in the table of contents that there are two method signatures, .val() and.val(value). This is our hint that .val() can do two things.
 - Reading the documentation, we discover that .val() is getter on an element, but that .val(value) is a setter on an element. Be sure you're using the correct method. Reading examples is very helpful, and the jQuery examples in the docs are fully functional!
 
 ### Lab: Get the value of an input
 ```
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>val demo</title>
-  <style>
-  p {
-    color: blue;
-    margin: 8px;
-  }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
- 
+<!-- Given this input, how do you get the value using jQuery? And what if the value changes? -->
 <input type="text" value="some text">
-<p></p>
- 
-<script>
-// your code here
-</script>
- 
-</body>
-</html>
+
 ```
 <details><summary>Answer</summary>
 <p> Simple: 
@@ -195,21 +162,24 @@ $( "button.continue" ).html( "Next Step..." )
 
 ### Lab: Research Common jQuery Functions
 Here is a list of most commonly used jQuery API functions:
-	1.	find()
-	2.	hide()
-	3.	show()
-	4.	html()
-	5.	append()
-	6.	prepend()
-	7.	on()
-	8.	off()
-	9.	css()
-	10.	attr()
-	11.	eq()
-	12.	text()
-	13.	each()
+1. find()
+2. hide()
+3. show()
+4. html()
+5. append()
+6. prepend()
+7. on()
+8. off()
+9. css()
+10. attr()
+11. eq()
+12. text()
+13. each()
  
 ### Code Together: .eq() and .each()
+
+### Homework
+https://github.com/ga-wdi-exercises/ttmar
 
 ### Bonus Material
 
